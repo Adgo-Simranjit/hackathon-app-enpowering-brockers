@@ -1,0 +1,83 @@
+<div class="chat-container">
+    <div class="chat-history">
+      <div *ngFor="let chat of chatHistory" class="chat-message">
+        <div class="user-message">
+          <span class="user-name">User:</span> 
+          <div class="chat">
+            {{ chat.userInput }}
+          </div>
+        </div>
+        <div class="response-message">
+          <span class="user-name">Response:</span> 
+          <div class="chat">{{ chat.response }}</div>
+        </div>
+      </div>
+    </div>
+  
+    <form (submit)="onSubmit($event)" class="chat-form">
+      <input
+        type="text"
+        [(ngModel)]="description"
+        name="description"
+        placeholder="Enter your message"
+        required
+      />
+      <div class="form-group fileupload-ctrl">
+        <label class="plus-icon" for="fileInput">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.001" height="17" viewBox="0 0 17.001 17">
+                <g id="add" transform="translate(-1841.478 -181.501)">
+                <rect id="Rectangle" width="16" height="16" transform="translate(1841.977 182)" fill="none" opacity="0"/>
+                <path id="path" d="M3000.5,7218.5v-7h-7a.5.5,0,0,1,0-1h7v-7a.5.5,0,1,1,1,0v7h7a.5.5,0,1,1,0,1h-7v7a.5.5,0,0,1-1,0Z" transform="translate(-1151.021 -7020.999)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+                </g>
+                </svg>
+        </label>
+        <input
+          type="file"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+          accept=".xlsx,.xls"
+          required
+        />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+
+<!-- <p>upload works!</p>
+<div class="upload-container">
+    <h2>Upload Excel File</h2>
+  
+    <form (submit)="onSubmit($event)" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label for="descriptionInput">Description:</label>
+        <input
+          type="text"
+          [(ngModel)]="description"
+          name="description"
+          placeholder="Enter a description"
+        />
+      </div>
+      <div class="form-group">
+        <label for="fileInput">+</label>
+        <input
+          type="file"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+          accept=".xlsx,.xls"
+          required
+        />
+      </div>
+      <button type="submit">Start Chat</button>
+    </form>
+  
+    <div *ngIf="responseData">
+      <h3>Agent Response:</h3>
+      <p>{{ responseData | json }}</p>
+    </div>
+  
+    <div *ngIf="errorMessage" class="error">
+      <p>Error: {{ errorMessage }}</p>
+    </div>
+  </div> -->
