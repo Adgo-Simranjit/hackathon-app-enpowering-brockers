@@ -25,6 +25,7 @@
    - Ensure MCP server is running and connected to Exact APIs.
    - Build and run the Angular application for the UI (local Url is http://localhost:4200/chat).
    - Confirm that the Angular app communicates with the WebAPI and MCP server for orchestrating Exact API calls.
+   - Alternatively, you can run the ConsoleApp to test the agent.
 
 4. **Test the Workflow**
    - Sample prompt: Get policy {policyreference}
