@@ -13,8 +13,8 @@
 ## ⚙️ Setup Instructions
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/hackathon-ai-agent
-   cd hackathon-ai-agent
+   git clone https://github.com/Adgo-Simranjit/hackathon-app-enpowering-brockers
+   cd hackathon-app-enpowering-brockers
    ```
 
 2. **Configure MCP Server**
