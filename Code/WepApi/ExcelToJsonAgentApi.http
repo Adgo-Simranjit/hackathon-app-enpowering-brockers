@@ -1,0 +1,6 @@
+@ExcelToJsonAgentApi_HostAddress = http://localhost:5274
+
+GET {{ExcelToJsonAgentApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
