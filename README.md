@@ -3,6 +3,9 @@
 # hackathon-app-enpowering-brockers
  Empowering Brokers with Smart, Lightweight Automation(P&amp;C)
 
+# Github Url
+- https://github.com/Adgo-Simranjit/hackathon-app-enpowering-brockers
+
 ## 🛠 Tech Stack Used
 - **Programming Language**: C#
 - **Backend Orchestration**: MCP Server
