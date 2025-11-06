@@ -23,7 +23,7 @@
 3. **Run the Agent**
    - Build and launch the .NET Core WebAPI that connects with the custom AI Agent.
    - Ensure MCP server is running and connected to Exact APIs.
-   - Build and run the Angular application for the UI.
+   - Build and run the Angular application for the UI (local Url is http://localhost:4200/chat).
    - Confirm that the Angular app communicates with the WebAPI and MCP server for orchestrating Exact API calls.
 
 4. **Test the Workflow**
