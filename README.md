@@ -8,7 +8,7 @@
 - **Backend Orchestration**: MCP Server
 - **External APIs**: Exact APIs 
 - **Frontend**: Custom UI (WPF / Web-based, depending on implementation)
-- **AI Agent Layer**: Rule-based or LLM-integrated agent for workflow simplification
+- **AI Agent Layer**: Custom AI agent built using Azure AI Foundry, designed to interact with brokers via a lightweight interface. It connects to the MCP orchestration tool to execute tasks such as get policy.
 
 ## ⚙️ Setup Instructions
 1. **Clone the Repository**
@@ -21,11 +21,14 @@
    - Set up environment variables for Exact API keys and endpoints.
 
 3. **Run the Agent**
-   - Build and launch the C# application.
+   - Build and launch the .NET Core WebAPI that connects with the custom AI Agent.
    - Ensure MCP server is running and connected to Exact APIs.
+   - Build and run the Angular application for the UI.
+   - Confirm that the Angular app communicates with the WebAPI and MCP server for orchestrating Exact API calls.
 
 4. **Test the Workflow**
-   - Use sample policy.
+   - Sample prompt: Get policy {policyreference}
+   - Use sample policy: HackathonTest
 
 ## 🧠 Key Architecture & Design Decisions
 - **MCP Server as Middleware**: Chosen to decouple the agent from Exact, allowing modular orchestration and simplified API management.
