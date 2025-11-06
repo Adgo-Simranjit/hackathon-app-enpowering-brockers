@@ -7,7 +7,7 @@
 - **Programming Language**: C#
 - **Backend Orchestration**: MCP Server
 - **External APIs**: Exact APIs 
-- **Frontend**: Custom UI (WPF / Web-based, depending on implementation)
+- **Frontend**: Custom UI (Angular App)
 - **AI Agent Layer**: Custom AI agent built using Azure AI Foundry, designed to interact with brokers via a lightweight interface. It connects to the MCP orchestration tool to execute tasks such as get policy.
 
 ## ⚙️ Setup Instructions
